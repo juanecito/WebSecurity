@@ -2611,3 +2611,9 @@ Two things that came up while testing:
 
 - **Python 3.13 verifies certificates in strict X.509 mode** and rejects a CA without the `keyUsage` extension. That is why the certificates in Appendices B and C carry `keyUsage`, `basicConstraints` and `extendedKeyUsage=serverAuth`. It is the same check browsers apply to real certificates.
 - **`requests` ignores `session.verify` if the `REQUESTS_CA_BUNDLE` variable is set.** The client uses `trust_env = False` so it always uses `ca.pem` and does not go through environment proxies.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Copyright (c) 2026 Juan Maria Gomez Lopez <juan-maria.gomez-lopez@tutamail.com>
